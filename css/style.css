@@ -7,25 +7,30 @@
 
 body {
     background: var(--backgroundColor);
+    font-size: 20px;
+    color: var(--secondFontColor);
+    line-height: 32px;
 }
 
+header {
+    text-align: center;
+}
 
 h1 {
-    font-size: 75px;
-    display: flex;
+    font-size: 65px;
+    /* display: flex;
+    justify-content: center; text-align: center;*/
     color: var(--mainFontColor);
-    justify-content: center;
-    text-align: center;
-    margin: 15px;
+    margin: 25px 0;
 }
 
 header p {
-    color: var(--secondFontColor);
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: center; */
     font: 30px;
-    margin: 30px;
+    max-width: 960px;
+    margin: 0 auto 50px;
 }
 
 section {
@@ -34,17 +39,42 @@ section {
     justify-content: space-around;
 }
 
+figure {
+    width: 100%;
+}
+
 .card-column {
+    position: relative;
     display: flex;
     border: 2px dashed var(--secondFontColor);
     width: 30%;
+    height: 250px;
     padding: 10px;
     margin: 10px;
 }
 
+h2 {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    width: 90%;
+    padding: 5px;
+    color: var(--mainFontColor);
+    border: 2px solid var(--secondFontColor);
+    background: var(--backgroundColor);
+}
+
 pre {
+    position: absolute;
+    width: 95%;
     background: linear-gradient(180deg, purple, magenta);
 }
+
+/* code {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+} */
 
 @media (max-width: 992px) {
     .card-column {
