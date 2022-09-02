@@ -37,17 +37,23 @@ section {
 .card-column {
     display: flex;
     border: 2px dashed var(--secondFontColor);
-    width: 33%;
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+}
+
+pre {
+    background: linear-gradient(180deg, purple, magenta);
 }
 
 @media (max-width: 992px) {
     .card-column {
-        width: 50%;
+        width: 47%;
     }
 }
 
 @media (max-width: 768px) {
     .card-column {
-        width: 100%;
+        width: 97%;
     }
 }
