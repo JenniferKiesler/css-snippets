@@ -1,0 +1,53 @@
+:root {
+    --mainFontColor: magenta;
+    --borderRadius: 15px;
+    --backgroundColor: rgb(63, 63, 63);
+    --secondFontColor: white;
+}
+
+body {
+    background: var(--backgroundColor);
+}
+
+
+h1 {
+    font-size: 75px;
+    display: flex;
+    color: var(--mainFontColor);
+    justify-content: center;
+    text-align: center;
+    margin: 15px;
+}
+
+header p {
+    color: var(--secondFontColor);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font: 30px;
+    margin: 30px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-column {
+    display: flex;
+    border: 2px dashed var(--secondFontColor);
+    width: 33%;
+}
+
+@media (max-width: 992px) {
+    .card-column {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-column {
+        width: 100%;
+    }
+}
