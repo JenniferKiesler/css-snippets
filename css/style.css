@@ -56,7 +56,7 @@ figure {
     transition-delay: 0.5s;
 }
 
-.card-column:hover, h2:hover {
+.card-column:hover, .card-column:hover h2{
     box-shadow: 0px 0px 10px 5px var(--mainFontColor);
 }
 
