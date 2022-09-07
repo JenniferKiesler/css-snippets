@@ -52,11 +52,16 @@ figure {
     border: 2px dashed var(--secondFontColor);
     width: 30%;
     padding: 20px;
-    margin: 20px;
+    margin: 15px 5px;
+    transition-delay: 0.5s;
+}
+
+.card-column:hover, h2:hover {
+    box-shadow: 0px 0px 10px 5px var(--mainFontColor);
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
     top: -15px;
     left: 20px;
@@ -66,6 +71,7 @@ h2 {
     border: 2px solid var(--secondFontColor);
     background: var(--backgroundColor);
     border-radius: 10px;
+    transition-delay: 0.5s;
 }
 
 .card-body p {
@@ -83,9 +89,20 @@ h2 {
     padding: 15px;
     border-radius: var(--radius);
     white-space: pre-wrap;
-    flex: 1;
+    flex: 0;
 }
 
+code::selection {
+    background: aquamarine;
+    color: var(--backgroundColor);
+}
+
+footer {
+    color: var(--mainFontColor);
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
 @media (max-width: 992px) {
     body {
         padding-left: var(--padding);
@@ -96,7 +113,7 @@ h2 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     body {
         padding-left: var(--padding);
         padding-right: var(--padding);
