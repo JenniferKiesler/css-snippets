@@ -92,6 +92,10 @@ h2 {
     flex: 0;
 }
 
+code {
+    user-select: all;
+}
+
 code::selection {
     background: aquamarine;
     color: var(--backgroundColor);
